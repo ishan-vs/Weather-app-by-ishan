@@ -76,7 +76,7 @@ searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
 });
 
-checkWeather("shimla");  // Default city on load
+checkWeather("Vadodara");  // Default city on load
 
 // Navbar Menu Toggle (Mobile)
 const menuToggle = document.querySelector(".menu-toggle");
