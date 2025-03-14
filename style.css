@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-  
+/* Body Styling */
 body {
     background: linear-gradient(135deg, #00feba, #5b548a);
     transition: background 0.5s ease;
@@ -13,8 +13,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 20px;
 }
 
+/* Weather Card */
 .card {
     width: 90%;
     max-width: 470px;
@@ -32,6 +34,7 @@ body {
     transform: scale(1.02);
 }
 
+/* Search Bar */
 .search {
     width: 100%;
     display: flex;
@@ -44,12 +47,12 @@ body {
     outline: 0;
     background: rgba(255, 255, 255, 0.4);
     color: #121111;
-    padding: 10px 25px;
-    height: 60px;
+    padding: 12px;
+    height: 50px;
     border-radius: 30px;
     flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+    margin-right: 10px;
+    font-size: 16px;
     backdrop-filter: blur(5px);
 }
 
@@ -58,8 +61,8 @@ body {
     outline: 0;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: transform 0.2s;
 }
@@ -72,29 +75,31 @@ body {
     width: 16px;
 }
 
+/* Weather Details */
 .weather-icon {
-    width: 150px;
-    margin-top: 30px;
+    width: 120px;
+    margin-top: 20px;
     transition: transform 0.5s ease;
 }
 
 .weather h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 500;
 }
 
 .weather h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     margin-top: -10px;
 }
 
+/* Weather Extra Info */
 .details {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .col {
@@ -104,12 +109,12 @@ body {
 }
 
 .col img {
-    width: 40px;
+    width: 30px;
     margin-right: 10px;
 }
 
 .humidity, .wind {
-    font-size: 24px;
+    font-size: 20px;
     margin-top: -6px;
 }
 
@@ -126,6 +131,7 @@ body {
     color: red;
 }
 
+/* Background Particles */
 #particles-js {
     position: absolute;
     width: 100%;
@@ -134,16 +140,14 @@ body {
     z-index: -1;
 }
 
-/* nav bar */
-
-/* Navbar Styling */
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 10px;
     position: fixed;
     width: 90%;
@@ -155,7 +159,7 @@ body {
 
 .logo {
     color: rgb(33, 2, 2);
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .logo span {
@@ -165,7 +169,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 .nav-links li {
@@ -175,7 +179,7 @@ body {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -183,10 +187,10 @@ body {
     color: #ffcc33;
 }
 
-/* Menu Toggle Button (For Mobile) */
+/* Mobile Navbar */
 .menu-toggle {
     display: none;
-    font-size: 30px;
+    font-size: 28px;
     cursor: pointer;
     color: white;
 }
@@ -195,7 +199,7 @@ body {
 .dark-mode-toggle {
     background: transparent;
     border: none;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
     color: white;
     transition: 0.3s;
@@ -205,16 +209,53 @@ body {
     color: #ffcc33;
 }
 
-/* Responsive Navbar (Mobile) */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
+    /* Adjust body */
+    body {
+        padding: 10px;
+        height: auto;
+    }
+
+    /* Adjust weather card */
+    .card {
+        padding: 30px 25px;
+        width: 95%;
+    }
+
+    /* Adjust search box */
+    .search input {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Adjust text sizes */
+    .weather h1 {
+        font-size: 40px;
+    }
+
+    .weather h2 {
+        font-size: 25px;
+    }
+
+    .humidity, .wind {
+        font-size: 18px;
+    }
+
+    /* Adjust navbar */
     .nav-links {
         display: none;
         flex-direction: column;
         background: rgba(0, 0, 0, 0.7);
         position: absolute;
-        top: 60px;
+        top: 50px;
         right: 0;
-        width: 200px;
+        width: 180px;
         padding: 15px;
         border-radius: 10px;
     }
@@ -234,14 +275,13 @@ body {
     color: white;
 }
 
-
+/* Social Icons */
 .social-icon {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     transition: transform 0.3s;
 }
 
 .social-icon:hover {
     transform: scale(1.2);
 }
-
